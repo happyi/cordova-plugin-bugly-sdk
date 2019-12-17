@@ -10,13 +10,13 @@
   "description": "Cordova Crash Reporter",
   "repository": {
     "type": "git",
-    "url":"http://192.168.1.139/happyi/cordova-plugin-bugly-sdk.git"
+    "url": "http://192.168.1.139/happyi/cordova-plugin-bugly-sdk.git"
   },
   "keywords": [
     "cordova",
     "bugly",
     "crash"
   ],
-  "author":"happyi",
+  "author": "happyi",
   "license": "MIT"
 }
