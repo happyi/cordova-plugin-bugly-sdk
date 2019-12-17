@@ -1,5 +1,5 @@
 {
-  "name": "mz-cordova-plugin-bugly-sdk",
+  "name": "cordova-plugin-bugly-sdk",
   "version": "1.0.0",
   "cordova": {
     "id": "cordova-plugin-bugly-sdk",
