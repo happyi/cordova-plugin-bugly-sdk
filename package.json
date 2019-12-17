@@ -2,7 +2,7 @@
   "name": "mz-cordova-plugin-bugly-sdk",
   "version": "1.0.0",
   "cordova": {
-    "id": "cordova-plugin-bugly-sdk",
+    "id": "mz-cordova-plugin-bugly-sdk",
     "platforms": [
       "ios"
     ]
