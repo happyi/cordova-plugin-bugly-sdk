@@ -7,7 +7,7 @@
 ## 安装
 
 ```shell
-cordova plugin add http://192.168.1.139/happyi/cordova-plugin-bugly-sdk.git
+cordova plugin add git+http://192.168.1.139/happyi/cordova-plugin-bugly-sdk.git
 ```
 
 ## 调用
