@@ -3,7 +3,6 @@ var exec = require('cordova/exec');
 exports.initSDK = function(success, error, arg0) {
     exec(success, error, "Bugly", "initSDK", [arg0]);
 };
-
 exports.enableJSMonitor = function() {
     exec(null, null, "Bugly", "enableJSMonitor", []);
 };
@@ -35,4 +34,3 @@ exports.testANRCrash = function() {
 exports.testOCCrash = function() {
     exec(null, null, "Bugly", "testOCCrash", []);
 };
-
