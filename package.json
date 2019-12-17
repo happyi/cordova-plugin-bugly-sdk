@@ -1,20 +1,22 @@
 {
-  "private": true,
   "name": "mz-cordova-plugin-bugly-sdk",
   "version": "1.0.0",
   "cordova": {
-    "id": "mz-cordova-plugin-bugly-sdk",
+    "id": "cordova-plugin-bugly-sdk",
     "platforms": [
       "ios"
     ]
   },
   "description": "Cordova Crash Reporter",
-  "repository": "http://192.168.1.139/happyi/cordova-plugin-bugly-sdk.git",
+  "repository": {
+    "type": "git",
+    "url":"http://192.168.1.139/happyi/cordova-plugin-bugly-sdk.git"
+  },
   "keywords": [
     "cordova",
     "bugly",
     "crash"
   ],
   "author":"happyi",
-  "license": "Apache 2.0 License"
+  "license": "MIT"
 }
