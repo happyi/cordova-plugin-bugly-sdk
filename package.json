@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "mz-cordova-plugin-bugly-sdk",
   "version": "1.0.0",
   "cordova": {
@@ -8,7 +9,7 @@
     ]
   },
   "description": "Cordova Crash Reporter",
-  "repository": "http://192.168.1.139/mezeron/mz-cordova-plugin-bugly-sdk.git",
+  "repository": "http://192.168.1.139/happyi/cordova-plugin-bugly-sdk.git",
   "keywords": [
     "cordova",
     "bugly",
