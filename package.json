@@ -1,8 +1,8 @@
 {
-  "name": "cordova-plugin-bugly-sdk",
-  "version": "1.0.0",
+  "name": "cordova-plugin-mz-bugly-sdk",
+  "version": "1.0.1",
   "cordova": {
-    "id": "cordova-plugin-bugly-sdk",
+    "id": "cordova-plugin-mz-bugly-sdk",
     "platforms": [
       "ios"
     ]
@@ -10,7 +10,7 @@
   "description": "Cordova Crash Reporter",
   "repository": {
     "type": "git",
-    "url": "http://192.168.1.139/happyi/cordova-plugin-bugly-sdk.git"
+    "url": "http://192.168.1.139/happyi/cordova-plugin-mz-bugly-sdk.git"
   },
   "keywords": [
     "cordova",
