@@ -50,6 +50,7 @@
         config.blockMonitorTimeout = [[params objectForKey:@"block_monitor_timeout"] intValue];
     }
 
+
     config.reportLogLevel = BuglyLogLevelInfo;
     NSDictionary * dict = [[NSBundle mainBundle] infoDictionary];
     NSString * appid = [params objectForKey:@"ios_appId"];
@@ -64,4 +65,55 @@
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
+
+
+- (void)setUserId:(CDVInvokedUrlCommand*)command
+{
+    CDVPluginResult* pluginResult = nil;
+
+    NSDictionary *params = [command.arguments objectAtIndex:0];
+
+    if (!params)
+    {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"参数格式错误"];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+        return ;
+    }
+
+
+    NSString *userId = [params objectForKey:@"userId"];
+
+    [Bugly setUserIdentifier:userId];
+
+
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@""];
+
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
+- (void)setUserValue:(CDVInvokedUrlCommand*)command
+{
+    CDVPluginResult* pluginResult = nil;
+
+    NSDictionary *params = [command.arguments objectAtIndex:0];
+
+    if (!params)
+    {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"参数格式错误"];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+        return ;
+    }
+
+
+    NSString *key = [params objectForKey:@"key"];
+    NSString *value = [params objectForKey:@"value"];
+
+    [Bugly setUserValue:value forKey:key];
+
+
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@""];
+
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 @end

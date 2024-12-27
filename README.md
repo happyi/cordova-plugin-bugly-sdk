@@ -31,4 +31,24 @@ window.bugly.initSDK(function(success){
    console.log(err);
 },args);
 
+window.bugly.setUserId(function(success){
+    console.log("设置成功");
+},function(err){
+    console.log("设置失败");
+    console.log(err);
+},{{userId}});
+
+
+window.bugly.setUserValue(function(success){
+    console.log("设置成功");
+},function(err){
+    console.log("设置失败");
+    console.log(err);
+},{
+    userName:"{{userName}}",
+    nickName:"{{nickName}}",
+});
+
 ```
+## 发布
+npm publish --registry=https://registry.npmjs.org/

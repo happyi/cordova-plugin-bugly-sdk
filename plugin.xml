@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-plugin-mz-bugly-sdk"
-    version="1.0.1">
+        id="cordova-plugin-mz-bugly-sdk"
+        version="1.0.2">
 
-  <name>Bugly</name>
-  <description>Bugly SDK Cordova Plugin </description>
-  <author>happyi</author>
+    <name>Bugly</name>
+    <description>Bugly SDK Cordova Plugin</description>
+    <author>happyi</author>
 
-  <js-module name="Bugly" src="www/bugly.js">
-    <clobbers target="window.bugly"/>
-  </js-module>
+    <js-module name="Bugly" src="www/bugly.js">
+        <clobbers target="window.bugly"/>
+    </js-module>
 
-  <!-- ios -->
-  <platform name="ios">
+    <!-- ios -->
+    <platform name="ios">
 
-    <header-file src="src/ios/CDVBugly.h" />
-    <source-file src="src/ios/CDVBugly.m" />
-    <framework src="SystemConfiguration.framework" />
-    <framework src="Security.framework" />
-    <framework src="libz.tbd" />
-    <framework src="libc++.tbd" />
-    <framework src="src/ios/Bugly.framework" custom="true" />
+        <header-file src="src/ios/CDVBugly.h"/>
+        <source-file src="src/ios/CDVBugly.m"/>
+        <framework src="SystemConfiguration.framework"/>
+        <framework src="Security.framework"/>
+        <framework src="libz.tbd"/>
+        <framework src="libc++.tbd"/>
+        <framework src="src/ios/Bugly.framework" custom="true"/>
 
-    <config-file target="config.xml" parent="/*">
-        <feature name="Bugly">
-          <param name="ios-package" value="CDVBugly"/>
-        </feature>
-    </config-file>
-  </platform>
+        <config-file target="config.xml" parent="/*">
+            <feature name="Bugly">
+                <param name="ios-package" value="CDVBugly"/>
+            </feature>
+        </config-file>
+    </platform>
 
 </plugin>
