@@ -4,4 +4,9 @@
 
 }
 - (void)initSDK:(CDVInvokedUrlCommand*)command;
+
+- (void)setUserId:(CDVInvokedUrlCommand*)command;
+
+- (void)setUserValue:(CDVInvokedUrlCommand*)command;
+
 @end
