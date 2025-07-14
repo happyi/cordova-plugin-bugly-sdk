@@ -7,6 +7,10 @@
       "ios"
     ]
   },
+  "scripts": {
+    "push-public": "npm publish --registry=https://registry.npmjs.org/",
+    "push-private": "npm publish --registry=https://nexus.mezeron.cn/repository/npm-mezeron/"
+  },
   "description": "Cordova Crash Reporter",
   "repository": {
     "type": "git",
